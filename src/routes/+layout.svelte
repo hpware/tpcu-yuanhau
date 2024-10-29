@@ -1,21 +1,21 @@
 <script lang="ts">
-	import Header from './Header.svelte';
 	import '../app.css';
+	import githubimg from "/src/lib/images/github.svg";
+	import Nav from './Nav.svelte';
 
 	let { children } = $props();
 </script>
 
 <div class="app">
-	<Header />
+	<Nav/>
 
 	<main>
 		{@render children()}
 	</main>
-
 	<footer>
-		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
-		</p>
+		<a href="https://github.com/hpware" target="_blank">
+			<img src={githubimg} alt="github" width="32" height="32" />
+		</a>
 	</footer>
 </div>
 
