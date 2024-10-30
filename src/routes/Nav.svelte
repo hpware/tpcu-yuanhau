@@ -30,8 +30,9 @@
 			display:flex;
 			justify-content:center;
 			align-items:center;
+      margin-bottom:0;
 	}
-  ul {
+  ul { 
       position: relative;
       padding: 0;
       margin: 0;
@@ -60,4 +61,5 @@
       border: var(--size) solid transparent;
       border-top: var(--size) solid var(--color-theme-1);
   }
+
 </style>
